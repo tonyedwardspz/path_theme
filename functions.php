@@ -1,5 +1,9 @@
 <?php
 
+// define image path
+define( 'TEMPPATH', get_bloginfo('stylesheet_directory'));
+define( 'IMAGES', TEMPPATH. "/images");
+
 // Add Translation Option
 load_theme_textdomain( 'wpbootstrap', TEMPLATEPATH.'/languages' );
 $locale = get_locale();

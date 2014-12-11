@@ -40,7 +40,7 @@ Template Name: Homepage
         <![endif]-->    
     </head>
     
-    <body <?php body_class(); ?>>
+    <body <?php body_class(); ?> home>
                 
         <header role="banner">
                 
@@ -54,13 +54,9 @@ Template Name: Homepage
                             <span class="icon-bar"></span>
                         </button>
 
-                        <?php $logo = get_option('path_logo', IMAGES.'/logo.png'); ?>
-
-
-
                         <a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" 
                             href="<?php echo home_url(); ?>">
-                            <img src='<?php print $logo; ?>' alt="<?php bloginfo('name'); ?>">
+                            <img src='<?php print IMAGES.'/lg_logo.png' ?>' alt="<?php bloginfo('name'); ?>">
                         </a>
                     </div>
 
@@ -70,7 +66,7 @@ Template Name: Homepage
 
                 </div> <!-- end .container -->
 
-                <div class="container">
+                <div class="container nav-container">
 
                     <div class="collapse navbar-collapse navbar-responsive-collapse">
                         <?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>

@@ -75,6 +75,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 	border-bottom: 1px solid #e7e7e7;
 }
 
+.home .navbar-header{
+	height:150px;
+
+}
+
+.home .top-row{
+	margin-top: 160px;
+}
+
 @media screen and (max-width: 767px) { 
 	.navbar-form {
 		display: none;
