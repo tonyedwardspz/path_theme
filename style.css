@@ -30,6 +30,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 	background-color: #fff;
 }
 
+.jumbo-header h1{
+	margin-bottom: 20px;
+}
+
+
 .top-row{
 	margin-top: 90px;
 }
@@ -108,6 +113,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
     -webkit-transition: background-color 0.5s ease;
     transition: background-color 0.5s ease;
     background-color: #00aced; }
+
+#content {
+	margin-top:70px;
+}
 
 
 
