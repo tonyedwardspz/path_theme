@@ -34,6 +34,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 	margin-bottom: 20px;
 }
 
+.jumbo-message .btn{
+	margin: 10px 0;
+}
+
 
 .top-row{
 	margin-top: 90px;
@@ -45,17 +49,22 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 
 .btn-primary{
-	background-color: #D564C6;
-	border-color: #D564C6;
+	background-color: #72308D;
+	border-color: #72308D;
 	-webkit-transition: background-color 0.5s ease;
     transition: background-color 0.5s ease;
 }
 
 .btn-primary:hover {
-	background-color: #BE58B1;
-	border-color: #D564C6;
+	background-color: #9B70B2;
+	border-color: #72308D;
 	-webkit-transition: background-color 0.7s ease;
     transition: background-color 0.7s ease;
+}
+
+.btn-primary:active {
+	background-color: #9B70B2;
+	border-color: #72308D;
 }
 
 .navbar-default{
