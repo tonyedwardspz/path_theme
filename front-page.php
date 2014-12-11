@@ -78,10 +78,10 @@ Template Name: Homepage
         
         </header> <!-- end header -->
         
-        <div class="container">
+    <div class="container">
 
 
-    <div class="container top-row">
+    <div class="top-row">
 
     	<div class="clearfix row">
 
