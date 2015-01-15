@@ -53,12 +53,6 @@ jQuery(document).ready(function($) {
 		return true;
 	});
 	
-	// $('article.post').hover(function(){
-	// 	$('a.edit-post').show();
-	// },function(){
-	// 	$('a.edit-post').hide();
-	// });
-	
 	// Prevent submission of empty form
 	$('[placeholder]').parents('form').submit(function() {
 	  $(this).find('[placeholder]').each(function() {
@@ -72,5 +66,11 @@ jQuery(document).ready(function($) {
 	$('.alert-message').alert();
 	
 	$('.dropdown-toggle').dropdown();
- 
+
+	// call the font sizer
+
 });
+
+function textSizeChanger(size){
+	
+}

@@ -193,15 +193,6 @@ function wp_bootstrap_register_sidebars() {
     'before_title' => '<h4 class="widgettitle">',
     'after_title' => '</h4>',
   ));
-
-  register_sidebar(array(
-    'id' => 'homeTwitter',
-    'name' => 'Homepage Twitter',
-    'before_widget' => '<div id="%1$s" class="widget col-md-6 %2$s">',
-    'after_widget' => '</div>',
-    'before_title' => '<h4 class="widgettitle">',
-    'after_title' => '</h4>',
-  ));
     
 } // don't remove this bracket!
 add_action( 'widgets_init', 'wp_bootstrap_register_sidebars' );
