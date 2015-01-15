@@ -144,6 +144,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 	text-decoration: none;
 }
 
+body>#wpFontMinus, body>#wpFontPlus{
+	display:none;
+}
+
 #content {
 	margin-top:70px;
 }
