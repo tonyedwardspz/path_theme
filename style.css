@@ -128,9 +128,21 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 
 .twitter:hover {
-    -webkit-transition: background-color 0.5s ease;
+    background-color: #00aced; 
+}
+
+.easyFundraising:hover{
+	background-color: #194E86 ;
+}
+
+.social{
+	-webkit-transition: background-color 0.5s ease;
     transition: background-color 0.5s ease;
-    background-color: #00aced; }
+}
+
+.social a{
+	text-decoration: none;
+}
 
 #content {
 	margin-top:70px;

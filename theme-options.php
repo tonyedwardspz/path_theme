@@ -22,6 +22,9 @@ function path_register_settings(){
 	// register social media setting
 	register_setting('path-settings-group', 'path_twitter');
 
+	// register easy fundraising setting
+	register_setting('path-settings-group', 'path_easy_fundraising');
+
 	// register logo settings
 	register_setting('path-settings-group', 'path_logo');
 
@@ -118,6 +121,14 @@ function path_settings_page(){
 			<br/>
 		</td>
 		</tr>
+
+		<tr valign="top">
+		<th scope="row">Easy Fundraising Link:</th>
+		<td>
+			<input type="text" name="path_easy_fundraising" value="<?php print get_option('path_easy_fundraising'); ?>" />
+			<br/>
+		</td>
+		</tr>		
 
 		<tr valign="top">
 		<th scope="row">Analytics Code:</th>
