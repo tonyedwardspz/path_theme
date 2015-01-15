@@ -140,7 +140,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
     transition: background-color 0.5s ease;
 }
 
-.social a{
+.social a, .social a:hover{
 	text-decoration: none;
 }
 
@@ -148,11 +148,26 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 	margin-top:70px;
 }
 
-
-
 /***********  ADMIN AREA  ***************/
 
 .analytics-textarea{
 	width: 300px;
 	height: 150px;
+}
+
+/************  Font size adjust plugin sizes**********/
+.font-size-1{
+	font-size: 16px;
+}
+.font-size-2{
+	font-size: 18px;
+}
+.font-size-3{
+	font-size: 20px;
+}
+.font-size-4{
+	font-size: 22px;
+}
+.font-size-5{
+	font-size: 24px;
 }
