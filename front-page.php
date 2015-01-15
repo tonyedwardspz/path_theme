@@ -108,10 +108,8 @@ Template Name: Homepage
     		</div>
 
     	</div>
+        
 
-
-
-        <!-- Example row of columns -->
         <div class="clearfix row">
             <div class="col-md-3">
                 <h2>Clients</h2>
@@ -144,7 +142,6 @@ Template Name: Homepage
                 <button class="btn btn-default" href="#" role="button">Get Involved &raquo;</button>
             </div>
         </div>
-        
     </div> <!-- /container -->
 
 <?php get_footer(); ?>
