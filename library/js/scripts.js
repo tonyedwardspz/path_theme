@@ -67,10 +67,31 @@ jQuery(document).ready(function($) {
 	
 	$('.dropdown-toggle').dropdown();
 
-	// call the font sizer
+	// color changer
+	// apply a body class to allow style changer
+	var button = document.getElementById('contrastLink'),
+		body = document.querySelector('body'),
+		contrastSet = false;
 
+
+	button.addEventListener('click', function(ev){
+		ev.preventDefault();
+
+		if (!contrastSet){
+			body.className+=' highContrast';
+			localStorage.path = ' highContrast';
+			contrastSet = true;
+		} else {
+			// use jquery to remove for better browser support
+			$('body').removeClass('highContrast');
+			localStorage.path = '';
+			contrastSet = false;
+		}
+	});
+
+	// add the class if its in local storage
+	if (localStorage.path == ' highContrast') {
+	    body.className+=' highContrast';
+	}
 });
 
-function textSizeChanger(size){
-	
-}

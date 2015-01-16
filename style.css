@@ -152,6 +152,36 @@ body>#wpFontMinus, body>#wpFontPlus{
 	margin-top:70px;
 }
 
+#contrast{
+	background-color: #000;
+}
+
+#contrast a{
+	color: #ff0;
+}
+
+body.highContrast,
+.highContrast .navbar,
+.highContrast .navbar-nav>.active>a,
+.highContrast .navbar-nav>.active>a:hover,
+.highContrast .btn-default{
+	background-color: #000;
+}
+
+body.highContrast,
+.highContrast .navbar-default .navbar-nav>li>a,
+.highContrast .navbar-nav>.active>a,
+.highContrast .navbar-nav>.active>a:hover,
+.highContrast .btn-default{
+	color: #ff0;
+}
+
+.highContrast .navbar-nav>.active>a,
+.highContrast .navbar-default .navbar-nav>li>a,
+.highContrast .navbar-nav>.active>a:hover,
+.highContrast .navbar-default .navbar-nav>li>a:hover{
+	text-decoration: underline;
+}
 /***********  ADMIN AREA  ***************/
 
 .analytics-textarea{
