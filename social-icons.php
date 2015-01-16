@@ -9,7 +9,7 @@ $easyFundraising = get_option('path_easy_fundraising');
 		<li id="contrast" class="social">
 			<a href="#" title="Change Contrast" id="contrastLink">A</a>
 		</li>
-
+		
 		<?php wp_fontsize::html(); ?>
 
 		<?php if($twitter): ?>
