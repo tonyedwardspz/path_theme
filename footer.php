@@ -11,13 +11,9 @@
 		            <?php endif; ?>
 		          </div>
 					
-					<nav class="clearfix">
-						<?php wp_bootstrap_footer_links(); // Adjust using Menus in Wordpress Admin ?>
-					</nav>
-					
 					<p class="pull-right">Developed by Team W.A.D</p>
 			
-					<p class="attribution">&copy; <?php bloginfo('name'); ?></p>
+					<p class="attribution">&copy; <?php bloginfo('name'); ?> P.A.T.H. (Plymouth Access To Housing) Ltd is a limited company (no. 4478819) and registered charity (no. 1097772)</p>
 				
 				</div> <!-- end #inner-footer -->
 				
