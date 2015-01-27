@@ -111,36 +111,44 @@ Template Name: Homepage
         
 
         <div class="clearfix row">
-            <div class="col-md-3">
+
+            <div class="col-md-3 col-sm-6 col-xs-6">
                 <h2>Clients</h2>
                 <?php $homepageImage = get_option('path_clients_image'); ?>
-
-				<img class="homepageCategoryImage" src='<?php print $homepageImage; ?>' alt="<?php bloginfo('name'); ?>">
+                <div class="imageWrap">
+    				<img class="homepageCategoryImage" src='<?php print $homepageImage; ?>' alt="<?php bloginfo('name'); ?>">
+                </div>
                 <button class="btn btn-default" href="#" role="button">Help with housing &raquo;</button>
             </div>
-            <div class="col-md-3">
+
+            <div class="col-md-3 col-sm-6 col-xs-6">
                 <h2>Agencies</h2>
                 <?php $homepageImage = get_option('path_agencies_image'); ?>
-
-				<img class="homepageCategoryImage" src='<?php print $homepageImage; ?>' alt="<?php bloginfo('name'); ?>">
+                <div class="imageWrap">
+    				<img class="homepageCategoryImage" src='<?php print $homepageImage; ?>' alt="<?php bloginfo('name'); ?>">
+                </div>
                 <button class="btn btn-default" href="#" role="button">Agencies / Refferers &raquo;</button>
             </div>
-            <div class="col-md-3">
+
+            <div class="col-md-3 col-sm-6 col-xs-6">
                 <h2>Landlords</h2>
                 <?php $homepageImage = get_option('path_landlords_image'); ?>
-
-				<img class="homepageCategoryImage" src='<?php print $homepageImage; ?>' alt="<?php bloginfo('name'); ?>">
+                <div class="imageWrap">
+    				<img class="homepageCategoryImage" src='<?php print $homepageImage; ?>' alt="<?php bloginfo('name'); ?>">
+                </div>
                 <button class="btn btn-default" href="#" role="button">Landloards / Agents &raquo;</button>
             </div>
-            <div class="col-md-3">
+
+            <div class="col-md-3 col-sm-6 col-xs-6">
                 <h2>Support Us</h2>
                 <?php $homepageImage = get_option('path_volunteers_image'); ?>
-
-				<img class="homepageCategoryImage" src='<?php print $homepageImage; ?>' alt="<?php bloginfo('name'); ?>">
+                <div class="imageWrap">
+    				<img class="homepageCategoryImage" src='<?php print $homepageImage; ?>' alt="<?php bloginfo('name'); ?>">
+                </div>
                 <button class="btn btn-default" href="#" role="button">Donate &raquo;</button>
-
                 <button class="btn btn-default" href="#" role="button">Get Involved &raquo;</button>
             </div>
+
         </div>
     </div> <!-- /container -->
 

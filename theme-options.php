@@ -13,46 +13,25 @@ function path_create_menu(){
 		'theme-options.php',
 		'path_settings_page'
 	);
-
-	// call register setting function
 	add_action('admin_init', 'path_register_settings');
 }
 
 function path_register_settings(){
-	// register social media setting
+	// register the various custom settings
 	register_setting('path-settings-group', 'path_twitter');
-
-	// register easy fundraising setting
 	register_setting('path-settings-group', 'path_easy_fundraising');
-
-	// register logo settings
+	register_setting('path-settings-group', 'path_footer_text');
 	register_setting('path-settings-group', 'path_logo');
-
-	// register logo settings
 	register_setting('path-settings-group', 'path_homepage_image');
-
-	// register logo settings
 	register_setting('path-settings-group', 'path_clients_image');
-
-	// register logo settings
 	register_setting('path-settings-group', 'path_agencies_image');
-
-	// register logo settings
 	register_setting('path-settings-group', 'path_landlords_image');
-
-	// register logo settings
 	register_setting('path-settings-group', 'path_volunteers_image');
-
-	// register analytics
 	register_setting('path-settings-group', 'path_analytics');
 }
 
-
 function path_settings_page(){
-
 ?>
-
-
 
 <div class="wrap">
 	<h2>Portfolio Theme Settings</h2>
@@ -131,6 +110,14 @@ function path_settings_page(){
 		</tr>		
 
 		<tr valign="top">
+		<th scope="row">Footer Text:</th>
+		<td>
+			<input type="text" name="path_footer_text" value="<?php print get_option('path_footer_text'); ?>" />
+			<br/>
+		</td>
+		</tr>	
+
+		<tr valign="top">
 		<th scope="row">Analytics Code:</th>
 		<td>
 			<textarea name="path_analytics" class="analytics-textarea"><?php print get_option('path_analytics'); ?></textarea>
@@ -143,10 +130,6 @@ function path_settings_page(){
 
 	</form>
 </div>
-
-
-<?php 
-
-}
+<?php }
 
 ?>

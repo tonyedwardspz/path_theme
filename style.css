@@ -95,6 +95,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 	margin-top: 15px;
 }
 
+@media screen and (max-width: 400px){
+	.navbar-brand img{
+		position: absolute;
+	}
+}
+
 .FAageSocialIcons a {
 	color: #fff;
 	font-size: 20px;
@@ -186,6 +192,11 @@ body.highContrast,
 footer .pull-right,
 footer .attribution{
 	font-size: 12px;
+}
+
+.imageWrap{
+	height: 150px;
+	max-width:50%;
 }
 
 /***********  ADMIN AREA  ***************/

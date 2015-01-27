@@ -13,7 +13,12 @@
 					
 					<p class="pull-right">Developed by Team W.A.D</p>
 			
-					<p class="attribution">&copy; P.A.T.H. (Plymouth Access To Housing) Ltd is a limited company (no. 4478819) and registered charity (no. 1097772)</p>
+					<p class="attribution">&copy; P.A.T.H <?php 
+					$path_footer_text = get_option('path_footer_text');
+					if($path_footer_text){ 
+						print $path_footer_text;
+					} 
+					?></p>
 				
 				</div> <!-- end #inner-footer -->
 				
