@@ -504,7 +504,6 @@ function wp_bootstrap_add_active_class($classes, $item) {
 	if( $item->menu_item_parent == 0 && in_array('current-menu-item', $classes) ) {
     $classes[] = "active";
 	}
-  
   return $classes;
 }
 
@@ -513,18 +512,13 @@ add_filter('nav_menu_css_class', 'wp_bootstrap_add_active_class', 10, 2 );
 
 // enqueue styles
 if( !function_exists("wp_bootstrap_theme_styles") ) {  
-    function wp_bootstrap_theme_styles() { 
-        // This is the compiled css file from LESS - this means you compile the LESS file locally and put it in the appropriate directory if you want to make any changes to the master bootstrap.css.
-        wp_register_style( 'wpbs', get_template_directory_uri() . '/library/dist/css/styles.f6413c85.min.css', array(), '1.0', 'all' );
-        wp_enqueue_style( 'wpbs' );
+    function wp_bootstrap_theme_styles() {
 
-        // For child themes
         wp_register_style( 'wpbs-style', get_stylesheet_directory_uri() . '/style.css', array(), '1.0', 'all' );
         wp_enqueue_style( 'wpbs-style' );
 
-        // Font Awesome
         wp_register_style( 'font-awesome', 
-          get_template_directory_uri() . '/bower_components/font-awesome/css/font-awesome.css',  array(), '1.0', 'all' );
+          'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css',  array(), '1.0', 'all' );
         wp_enqueue_style( 'font-awesome' );
     }
 }
@@ -538,25 +532,18 @@ if( !function_exists( "wp_bootstrap_theme_js" ) ) {
       if ( is_singular() AND comments_open() AND ( get_option( 'thread_comments' ) == 1) ) 
         wp_enqueue_script( 'comment-reply' );
     }
-
-    // This is the full Bootstrap js distribution file. If you only use a few components that require the js files consider loading them individually instead
-    wp_register_script( 'bootstrap', 
-      get_template_directory_uri() . '/bower_components/bootstrap/dist/js/bootstrap.js', 
-      array('jquery'), 
-      '1.2' );
-
+    
     wp_register_script( 'wpbs-js', 
       get_template_directory_uri() . '/library/js/scripts.js',
-      array('bootstrap'), 
+      null, 
       '1.2' );
   
     wp_register_script( 'modernizr', 
-      get_template_directory_uri() . '/bower_components/modernizer/modernizr.js', 
+      'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', 
       array('jquery'), 
       '1.2' );
   
     wp_enqueue_script( 'bootstrap' );
-    wp_enqueue_script( 'wpbs-menu' );
     wp_enqueue_script( 'wpbs-js' );
     wp_enqueue_script( 'modernizr' );
     
