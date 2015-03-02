@@ -160,21 +160,15 @@ Template Name: Homepage
                             
                             <div class="page-header"><h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1></div>
                             
-                            <p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('F jS, Y', '','', FALSE); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
+                            <p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('F jS, Y', '','', FALSE); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?></p>
                         
-                        </header> <!-- end article header -->
+                        </header>
                     
                         <section class="post_content clearfix">
                             <?php the_excerpt( __("Read more &raquo;","wpbootstrap") ); ?>
-                        </section> <!-- end article section -->
-                        
-                        <footer>
-            
-                            <p class="tags"><?php the_tags('<span class="tags-title">' . __("Tags","wpbootstrap") . ':</span> ', ' ', ''); ?></p>
-                            
-                        </footer> <!-- end article footer -->
+                        </section>
                     
-                    </article> <!-- end article -->
+                    </article>
                     
                 <?php endwhile; 
                       endif; ?> 
@@ -184,8 +178,7 @@ Template Name: Homepage
             <div class="col-md-4">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2>Titter Feed</h2>
-                        <p>Tweets go here<p>
+                        <?php get_sidebar('sidebar2'); ?>
                     </div>
 
                     <div class="col-md-12">

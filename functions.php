@@ -110,19 +110,16 @@ function wp_bootstrap_footer_links() {
 
 // this is the fallback for header menu
 function wp_bootstrap_main_nav_fallback() { 
-  /* you can put a default here if you like */ 
+  
 }
 
 // this is the fallback for footer menu
 function wp_bootstrap_footer_links_fallback() { 
-  /* you can put a default here if you like */ 
+  
 }
 
 // Shortcodes
 require_once('library/shortcodes.php');
-
-// Admin Functions (commented out by default)
-// require_once('library/admin.php');         // custom admin functions
 
 // Custom Backend Footer
 add_filter('admin_footer_text', 'wp_bootstrap_custom_admin_footer');
@@ -193,7 +190,6 @@ function wp_bootstrap_register_sidebars() {
     'before_title' => '<h4 class="widgettitle">',
     'after_title' => '</h4>',
   ));
-    
 } // don't remove this bracket!
 add_action( 'widgets_init', 'wp_bootstrap_register_sidebars' );
 
@@ -321,7 +317,6 @@ function wp_bootstrap_add_homepage_meta_box() {
 	global $post;
 
 	// Only add homepage meta box if template being used is the homepage template
-	// $post_id = isset($_GET['post']) ? $_GET['post'] : (isset($_POST['post_ID']) ? $_POST['post_ID'] : "");
 	$post_id = $post->ID;
 	$template_file = get_post_meta($post_id,'_wp_page_template',TRUE);
 
