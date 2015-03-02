@@ -160,8 +160,8 @@ function wp_bootstrap_register_sidebars() {
   	'description' => 'Used only on the homepage page template.',
   	'before_widget' => '<div id="%1$s" class="widget %2$s">',
   	'after_widget' => '</div>',
-  	'before_title' => '<h4 class="widgettitle">',
-  	'after_title' => '</h4>',
+  	'before_title' => '<h2 class="widgettitle">',
+  	'after_title' => '</h2>',
   ));
     
   register_sidebar(array(
