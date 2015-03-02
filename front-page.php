@@ -150,6 +150,11 @@ Template Name: Homepage
             </div>
 
         </div>
+
+        <div class="clearfix row">
+
+        </div>
+
     </div> <!-- /container -->
 
 <?php get_footer(); ?>
