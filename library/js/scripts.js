@@ -93,8 +93,6 @@ jQuery(document).ready(function($) {
 	if (localStorage.path == ' highContrast') {
 	    body.className+=' highContrast';
 	}
-
-	$('.menu-item-has-children > a').submenupicker();
 });
 
 
