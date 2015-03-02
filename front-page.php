@@ -20,11 +20,8 @@ Template Name: Homepage
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
-        <!-- wordpress head functions -->
         <?php wp_head(); ?>
-        <!-- end of wordpress head -->
-        <!-- IE8 fallback moved below head to work properly. Added respond as well. Tested to work. -->
-            <!-- media-queries.js (fallback) -->
+
         <!--[if lt IE 9]>
             <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>           
         <![endif]-->
@@ -34,7 +31,7 @@ Template Name: Homepage
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->    
         
-            <!-- respond.js -->
+        <!-- respond.js -->
         <!--[if lt IE 9]>
                   <script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
         <![endif]-->    
@@ -64,19 +61,19 @@ Template Name: Homepage
                         <?php include 'social-icons.php'; ?>
                     </form>
 
-                </div> <!-- end .container -->
+                </div> 
 
                 <div class="container nav-container">
 
                     <div class="collapse navbar-collapse navbar-responsive-collapse">
-                        <?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+                        <?php wp_bootstrap_main_nav(); ?>
 
                     </div>
-                </div> <!-- end .container -->
+                </div> 
 
-            </div> <!-- end .navbar -->
+            </div> 
         
-        </header> <!-- end header -->
+        </header> 
         
     <div class="container">
 
@@ -90,8 +87,6 @@ Template Name: Homepage
     		</div>
 
     	</div>
-
-
 
     	<div class="clearfix row jumbo-message">
 
@@ -108,7 +103,6 @@ Template Name: Homepage
     		</div>
 
     	</div>
-        
 
         <div class="clearfix row">
 
@@ -153,8 +147,55 @@ Template Name: Homepage
 
         <div class="clearfix row">
 
+            <div class="col-md-8">
+                <h2>News feed</h2>
+
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    
+                    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+                        
+                        <header>
+                        
+                            <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured' ); ?></a>
+                            
+                            <div class="page-header"><h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1></div>
+                            
+                            <p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('F jS, Y', '','', FALSE); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
+                        
+                        </header> <!-- end article header -->
+                    
+                        <section class="post_content clearfix">
+                            <?php the_content( __("Read more &raquo;","wpbootstrap") ); ?>
+                        </section> <!-- end article section -->
+                        
+                        <footer>
+            
+                            <p class="tags"><?php the_tags('<span class="tags-title">' . __("Tags","wpbootstrap") . ':</span> ', ' ', ''); ?></p>
+                            
+                        </footer> <!-- end article footer -->
+                    
+                    </article> <!-- end article -->
+                    
+                <?php endwhile; 
+                      endif; ?> 
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Titter Feed</h2>
+                        <p>Tweets go here<p>
+                    </div>
+
+                    <div class="col-md-12">
+                        <h2>Housing Feed</h2>
+                        <p>Housing feed goes here<p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-    </div> <!-- /container -->
-
+    </div>
 <?php get_footer(); ?>

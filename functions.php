@@ -685,4 +685,12 @@ function wp_bootstrap_filter_ptags_on_images( $content ){
 }
 add_filter( 'the_content', 'wp_bootstrap_filter_ptags_on_images' );
 
+// limit the homepage housing feed to 3 posts
+function three_posts_on_homepage( $query ) {
+    if ( $query->is_home() && $query->is_main_query() ) {
+        $query->set( 'posts_per_page', 3 );
+    }
+}
+add_action( 'pre_get_posts', 'three_posts_on_homepage' );
+
 ?>
