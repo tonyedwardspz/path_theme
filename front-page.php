@@ -165,7 +165,7 @@ Template Name: Homepage
                         </header> <!-- end article header -->
                     
                         <section class="post_content clearfix">
-                            <?php the_content( __("Read more &raquo;","wpbootstrap") ); ?>
+                            <?php the_excerpt( __("Read more &raquo;","wpbootstrap") ); ?>
                         </section> <!-- end article section -->
                         
                         <footer>
