@@ -170,7 +170,8 @@ body.highContrast,
 .highContrast .navbar,
 .highContrast .navbar-nav>.active>a,
 .highContrast .navbar-nav>.active>a:hover,
-.highContrast .btn-default{
+.highContrast .btn-default,
+.highContrast span{
 	background-color: #000;
 }
 
@@ -178,7 +179,8 @@ body.highContrast,
 .highContrast .navbar-default .navbar-nav>li>a,
 .highContrast .navbar-nav>.active>a,
 .highContrast .navbar-nav>.active>a:hover,
-.highContrast .btn-default{
+.highContrast .btn-default,
+.highContrast span{
 	color: #ff0;
 }
 
