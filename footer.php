@@ -3,12 +3,7 @@
 				<div id="inner-footer" class="clearfix">
 		          <hr />
 		          <div id="widget-footer" class="clearfix row">
-		            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer1') ) : ?>
-		            <?php endif; ?>
-		            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer2') ) : ?>
-		            <?php endif; ?>
-		            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer3') ) : ?>
-		            <?php endif; ?>
+		            <?php echo do_shortcode('[google-translator]'); ?>
 		          </div>
 					
 					<p class="pull-right">Developed by Team W.A.D</p>

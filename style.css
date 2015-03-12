@@ -2,7 +2,7 @@
 Theme Name: PATH Plymouth Website theme
 Theme URI: http://www.plymouthpath.org/
 Description: A responsive theme for the PATH charity. Based upon the 320 Wordpress-Bootstrap theme
-Version: 0
+Version: 1
 Author: Tony Edwards, Jacques Heffernan, Zac Caley, James Yeomans
 Author URI: https://www.purelywebdesign.co.uk
 License: GNU General Public License v2.0 & Apache License 2.0
@@ -17,6 +17,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 .navbar .navbar-header{
 	height:80px;
 } 
+
+select,
+.goog-te-combo option{
+	color:#000;
+}
 
 .navbar-default .navbar-nav>.active>a {
 	background-color: #fff;
