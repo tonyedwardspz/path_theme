@@ -19,7 +19,8 @@ Template Name: Homepage
         <title><?php wp_title( '|', true, 'right' ); ?></title> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
+        <link rel="shortcut icon" src="images/Path%20Ear.png">
+        <link href='http://fonts.googleapis.com/css?family=Patrick+Hand+SC' rel='stylesheet' type='text/css'>
         <?php wp_head(); ?>
 
         <!--[if lt IE 9]>
@@ -82,7 +83,7 @@ Template Name: Homepage
 
     	<div class="clearfix row">
 
-    		<div class="col-md-12 jumbo-header">
+    		<div style="font-family: 'Patrick Hand SC', cursive;" class="col-md-12 jumbo-header">
     			<h1>Supporting people in housing need</h1>
     		</div>
 
@@ -92,7 +93,7 @@ Template Name: Homepage
 
     		<div class="col-md-6">
 	            <p>PATH is an independent charity, supporting people who are vulnerable to homelessness in Plymouth and Teignbridge.</p>
-	            <p><a class="btn btn-primary btn-lg" href="#" role="button">More about Path &raquo;</a></p>
+	            <p><a style="background-color:#8B3F9B;" class="btn btn-primary btn-lg" href="#" role="button">More about Path &raquo;</a></p>
     		</div>
 
     		<div class="col-md-6">
@@ -107,7 +108,7 @@ Template Name: Homepage
         <div class="clearfix row">
 
             <div class="col-md-3 col-sm-6 col-xs-6">
-                <h2>Clients</h2>
+                <h2 style="font-family: 'Patrick Hand SC', cursive;">Clients</h2>
                 <?php $homepageImage = get_option('path_clients_image'); ?>
                 <div class="imageWrap">
     				<img class="homepageCategoryImage" src='<?php print $homepageImage; ?>' alt="<?php bloginfo('name'); ?>">
@@ -116,7 +117,7 @@ Template Name: Homepage
             </div>
 
             <div class="col-md-3 col-sm-6 col-xs-6">
-                <h2>Agencies</h2>
+                <h2 style="font-family: 'Patrick Hand SC', cursive;">Agencies</h2>
                 <?php $homepageImage = get_option('path_agencies_image'); ?>
                 <div class="imageWrap">
     				<img class="homepageCategoryImage" src='<?php print $homepageImage; ?>' alt="<?php bloginfo('name'); ?>">
@@ -125,7 +126,7 @@ Template Name: Homepage
             </div>
 
             <div class="col-md-3 col-sm-6 col-xs-6">
-                <h2>Landlords</h2>
+                <h2 style="font-family: 'Patrick Hand SC', cursive;">Landlords</h2>
                 <?php $homepageImage = get_option('path_landlords_image'); ?>
                 <div class="imageWrap">
     				<img class="homepageCategoryImage" src='<?php print $homepageImage; ?>' alt="<?php bloginfo('name'); ?>">
@@ -134,7 +135,7 @@ Template Name: Homepage
             </div>
 
             <div class="col-md-3 col-sm-6 col-xs-6">
-                <h2>Support Us</h2>
+                <h2 style="font-family: 'Patrick Hand SC', cursive;">Support Us</h2>
                 <?php $homepageImage = get_option('path_volunteers_image'); ?>
                 <div class="imageWrap">
     				<img class="homepageCategoryImage" src='<?php print $homepageImage; ?>' alt="<?php bloginfo('name'); ?>">
@@ -148,7 +149,7 @@ Template Name: Homepage
         <div class="clearfix row">
 
             <div class="col-md-8">
-                <h2>News feed</h2>
+                <h2 style="font-family: 'Patrick Hand SC', cursive;">Path News</h2>
 
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     
@@ -158,7 +159,7 @@ Template Name: Homepage
                         
                             <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured' ); ?></a>
                             
-                            <div class="page-header"><h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1></div>
+                            <div class="page-header"><h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" style="color:#8B3F9B;" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1></div>
                             
                             <p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('F jS, Y', '','', FALSE); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?></p>
                         
@@ -178,12 +179,16 @@ Template Name: Homepage
             <div class="col-md-4">
                 <div class="row">
                     <div class="col-md-12">
-                        <?php get_sidebar('sidebar2'); ?>
+                        <h2 style="font-family: 'Patrick Hand SC', cursive;">Path Twitter Feed</h2>
+                        <a class="twitter-timeline" href="https://twitter.com/PathDevon" data-widget-id="586131227045924864">Tweets by @PathDevon</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                     </div>
 
                     <div class="col-md-12">
-                        <h2>Housing Feed</h2>
-                        <p>Housing feed goes here<p>
+                        <h2 style="font-family: 'Patrick Hand SC', cursive;">Housing Feed</h2>
+                        <a class="twitter-timeline" href="https://twitter.com/GuardianHousing" data-widget-id="586119675030990848">Tweets by @GuardianHousing</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
                     </div>
                 </div>
             </div>
