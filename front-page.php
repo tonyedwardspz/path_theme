@@ -93,7 +93,7 @@ Template Name: Homepage
 
     		<div class="col-md-6">
 	            <p>PATH is an independent charity, supporting people who are vulnerable to homelessness in Plymouth and Teignbridge.</p>
-	            <p><a style="background-color:#8B3F9B;" class="btn btn-primary btn-lg" href="#" role="button">More about Path &raquo;</a></p>
+	            <p><a style="background-color:#8B3F9B;" class="btn btn-primary btn-lg" href="http://purelywebdesign.co.uk/sandbox/path/?page_id=56" role="button">More about Path &raquo;</a></p>
     		</div>
 
     		<div class="col-md-6">
