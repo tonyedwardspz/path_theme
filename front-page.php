@@ -122,7 +122,7 @@ Template Name: Homepage
                 <div class="imageWrap">
     				<img class="homepageCategoryImage" src='<?php print $homepageImage; ?>' alt="<?php bloginfo('name'); ?>">
                 </div>
-                <button class="btn btn-default" href="#" role="button">Agencies / Refferers &raquo;</button>
+                <button class="btn btn-default" href="#" role="button">Agencies / Referers &raquo;</button>
             </div>
 
             <div class="col-md-3 col-sm-6 col-xs-6">
@@ -131,7 +131,7 @@ Template Name: Homepage
                 <div class="imageWrap">
     				<img class="homepageCategoryImage" src='<?php print $homepageImage; ?>' alt="<?php bloginfo('name'); ?>">
                 </div>
-                <button class="btn btn-default" href="#" role="button">Landloards / Agents &raquo;</button>
+                <button class="btn btn-default" href="#" role="button">Landlords / Agents &raquo;</button>
             </div>
 
             <div class="col-md-3 col-sm-6 col-xs-6">
