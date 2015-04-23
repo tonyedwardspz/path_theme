@@ -7,7 +7,8 @@ GETTING STARTED
 _______________
 
 
-	Fork repositry
-	Clone your fork to local wordpress installation's themes folder
+	Clone to your local wordpress installation's themes folder
+	Create fork
 	Get coding
-	Issue a pull request when ready
+	Push changes
+	Request Merge
